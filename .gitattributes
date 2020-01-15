@@ -2,3 +2,16 @@ data/original_analysis/ filter=lfs diff=lfs merge=lfs -text
 data/original_analysis/supplementary_data filter=lfs diff=lfs merge=lfs -text
 data/original_analysis/data filter=lfs diff=lfs merge=lfs -text
 data/original_analysis/*/* filter=lfs diff=lfs merge=lfs -text
+data/Isl1-diffExprs.Rdata filter=lfs diff=lfs merge=lfs -text
+data/Isl1-DM.Rdata filter=lfs diff=lfs merge=lfs -text
+data/Nkx2-5-markers.Rdata filter=lfs diff=lfs merge=lfs -text
+data/scData_filtered_2.Rda filter=lfs diff=lfs merge=lfs -text
+data/variability_clustered_cluster_specific_2.Rda filter=lfs diff=lfs merge=lfs -text
+data/dev_clustered_cluster_specific_2.Rda filter=lfs diff=lfs merge=lfs -text
+data/dev_cluster_specific_2.Rda filter=lfs diff=lfs merge=lfs -text
+data/Isl1_cardiac_branch_expression.txt filter=lfs diff=lfs merge=lfs -text
+data/Isl1_endo_branch_expression.txt filter=lfs diff=lfs merge=lfs -text
+data/Isl1-markers.Rdata filter=lfs diff=lfs merge=lfs -text
+data/Nkx2-5-diffExprs.Rdata filter=lfs diff=lfs merge=lfs -text
+data/Nkx2-5-DM.Rdata filter=lfs diff=lfs merge=lfs -text
+data/variability_cluster_specific_2.Rda filter=lfs diff=lfs merge=lfs -text
