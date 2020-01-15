@@ -1,0 +1,4 @@
+data/original_analysis/ filter=lfs diff=lfs merge=lfs -text
+data/original_analysis/supplementary_data filter=lfs diff=lfs merge=lfs -text
+data/original_analysis/data filter=lfs diff=lfs merge=lfs -text
+data/original_analysis/*/* filter=lfs diff=lfs merge=lfs -text
