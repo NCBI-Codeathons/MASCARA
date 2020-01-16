@@ -2,6 +2,7 @@
 
 
 ## A simple method for identifying transcription factor mediated regulatory networks from scRNA and scATAC data
+WHY WHY WHY 
 
 NAME is a containerized workflow that is able to identify biologically important gene regulatory networks by leveraging data from scRNA and scATAC experiments.
 
@@ -35,3 +36,5 @@ TBD
 ### Input File Format
 
 ### Output
+
+### Team Members
