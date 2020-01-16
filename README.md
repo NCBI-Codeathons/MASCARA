@@ -29,7 +29,11 @@ TBD
 A workflow that outputs a table containing a ranked transcription factor mediated network and an easy to use interactive visualization platform of the gene regulatory networks.
 
 ### Installation
-INSTALL DOCKER IMAGE
+Build Docker image:
+
+```
+docker build https://github.com/NCBI-Codeathons/Defining-Cell-Fate-Regulators-in-Multi-omic-Single-Cell-Developmental-Datasets.git#master:docker
+```
 
 ### Tutorial
 
