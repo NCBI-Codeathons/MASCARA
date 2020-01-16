@@ -1,26 +1,26 @@
 # Defining-Cell-Fate-Regulators-in-Multi-omic-Single-Cell-Developmental-Datasets
 
 
-##A simple method for identifying transcription factor mediated regulatory networks from scRNA and scATAC data
+## A simple method for identifying transcription factor mediated regulatory networks from scRNA and scATAC data
 
-##Dependencies
+### Dependencies
 
-###Docker (link) - an independent container platform
+Docker (link) - an independent container platform
 
-##Workflow
+### Workflow
 
-### Taking a sce object for both scRNA and scATAC
+Taking a sce object for both scRNA and scATAC
 
-##Workflow Method
+### Workflow Method
+TBD
+### Deliverables
 
-##Deliverables
+A workflow that outputs a table containing a ranked transcription factor mediated network and an easy to use interactive visualization platform of the gene regulatory networks.
 
-### A workflow that outputs a table containing a ranked transcription factor mediated network and an easy to use interactive visualization platform of the gene regulatory networks.
+### Installation
+TBD
+### Usage
+TBD
+### Input File Format
 
-#Installation
-
-#Usage
-
-#Input File Format
-
-#Output
+### Output
