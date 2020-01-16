@@ -40,7 +40,7 @@ TBD
 ### Output
 
 ### Team Members
-* Mattew Moss (Lead)
+* Matthew Moss (Lead)
 * Mervin Fansler
 * Nicholas Gomez
 * Claire Marchal
