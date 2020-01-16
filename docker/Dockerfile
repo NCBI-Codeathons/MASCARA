@@ -5,7 +5,7 @@ MAINTAINER Mervin Fansler <mef3005@med.cornell.edu>
 LABEL name="mfansler/mascara" \
       version="0.1.0" \
       url="https://github.com/NCBI-Codeathons/Defining-Cell-Fate-Regulators-in-Multi-omic-Single-Cell-Developmental-Datasets" \
-      maintainer="maintainer@bioconductor.org" \
+      maintainer="mef3005@med.cornell.edu" \
       description="Bioconductor-based docker image with tools for single-cell multiomics analysis." \
       license="MIT License"
 
