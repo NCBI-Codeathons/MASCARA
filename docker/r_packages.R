@@ -10,7 +10,8 @@ install.packages("ggpubr")
 BiocManager::install(c("GenomicRanges", "Gviz", "rtracklayer", 'BiocGenerics',
                        'DelayedArray', 'DelayedMatrixStats',
                        'limma', 'S4Vectors', 'SingleCellExperiment',
-                       'SummarizedExperiment', 'batchelor', 'chromVAR','JASPAR2016','motifmatchr'))
+                       'SummarizedExperiment', 'batchelor', 'chromVAR',
+                       'JASPAR2016','motifmatchr'))
 
 ################################################################################
 ## GITHUB PACKAGES
