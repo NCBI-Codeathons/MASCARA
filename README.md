@@ -12,7 +12,7 @@ NAME uses ACTIONet to first call cell states based on normal gene expression. It
 
 ### Dependencies
 
-Docker (link) - an independent container platform
+[Docker](https://www.docker.com/) - an independent container platform
 
 Taking a sce object for both scRNA and scATAC
 
