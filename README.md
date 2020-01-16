@@ -44,9 +44,9 @@ TBD
 ### Output
 
 ### Team Members
-* Matthew Moss (Lead)
-* Mervin Fansler
-* Nicholas Gomez
-* Claire Marchal
+* [Matthew Moss](https://github.com/mmoss609) (Lead)
+* [Mervin Fansler](https://github.com/mfansler)
+* [Nicholas Gomez](https://www.linkedin.com/in/nickgomez/)
+* [Claire Marchal](https://www.linkedin.com/in/marchalc/)
 * [Shahin Mohammadi](https://www.linkedin.com/in/shmohammadi/)
-* Marygrace Trousdell
+* [Marygrace Trousdell](https://www.linkedin.com/in/marygrace-trousdell/)
