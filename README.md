@@ -44,5 +44,5 @@ TBD
 * Mervin Fansler
 * Nicholas Gomez
 * Claire Marchal
-* Shain Mohammadi
+* Shahin Mohammadi
 * Marygrace Trousdell
