@@ -3,6 +3,14 @@
 
 ## A simple method for identifying transcription factor mediated regulatory networks from scRNA and scATAC data
 
+### Team Members
+* [Matthew Moss](https://github.com/mmoss609) (Lead)
+* [Mervin Fansler](https://github.com/mfansler)
+* [Nicholas Gomez](https://www.linkedin.com/in/nickgomez/)
+* [Claire Marchal](https://www.linkedin.com/in/marchalc/)
+* [Shahin Mohammadi](https://www.linkedin.com/in/shmohammadi/)
+* [Marygrace Trousdell](https://www.linkedin.com/in/marygrace-trousdell/)
+
 ### Goals and Aims
 The goal of to develop a pipeline for the identification of transcriptional regulators important in the various clusters identified by single cell sequencing. It is possible to identify regulators of related networks in RNA-seq via looking for  gene regulatory networks in transcriptomes of the same cells in different conditions. This has been successful in both bulk and single cell. It is also possible to identify transcription factor binding in ATAC-seq via searching for motif enrichment in the accessible chromatin regions. This has also been done successfully in both bulk and single cell studies. The aim to take a dataset which includes both single cell RNA and ATAC seqs, identify cell type clusters in them, and then integrate them in order to find different levels of cell type regulators. We would take this opportunity to standardize and automate various aspects of this pipeline, especially the integration between data types, for future uses, and also to allow direct flow into other levels of analysis. A specific example of this downstream preparation would be to ask if this could be integrated with a pseudotime analysis, in order to understand how regulatory networks change at different time points of cell type differentiation.
 
@@ -48,10 +56,6 @@ TBD
 
 ### Output
 
-### Team Members
-* [Matthew Moss](https://github.com/mmoss609) (Lead)
-* [Mervin Fansler](https://github.com/mfansler)
-* [Nicholas Gomez](https://www.linkedin.com/in/nickgomez/)
-* [Claire Marchal](https://www.linkedin.com/in/marchalc/)
-* [Shahin Mohammadi](https://www.linkedin.com/in/shmohammadi/)
-* [Marygrace Trousdell](https://www.linkedin.com/in/marygrace-trousdell/)
+### Future Directions
+
+Perhaps integrate within our pipeline a pseudotime analysis, in order to understand how regulatory networks change at different time points of cell type differentiation. Incorporating a trajectory inference may help to better characterize the evolution and divergences between cell clusters.
