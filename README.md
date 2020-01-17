@@ -34,7 +34,7 @@ install.packages(c("shiny","networkD3"))
 
 ### Workflow
 
-![mascara_pipeline_diagram]<img width="729" alt="Screen Shot 2020-01-17 at 1 27 48 PM" src="https://user-images.githubusercontent.com/59709364/72636567-47416100-392d-11ea-8799-1a2990a69c3e.png">)
+<img width="729" alt="Screen Shot 2020-01-17 at 1 27 48 PM" src="https://user-images.githubusercontent.com/59709364/72636567-47416100-392d-11ea-8799-1a2990a69c3e.png">)
 
 ### Deliverables
 
