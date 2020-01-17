@@ -20,6 +20,8 @@ NAME uses ACTIONet to first call cell states based on normal gene expression. It
 
 ### Dependencies
 
+The goal of our workflow is to be containerized so that all packages and dependencies are included in the docker image. We only require a few R packages in order to visualize the output from MASCARA.
+
 #### Pipeline
 [Docker](https://www.docker.com/) - an independent container platform
 
