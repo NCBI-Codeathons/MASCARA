@@ -4,7 +4,8 @@ rule all:
     input:
         "input/scRNA-Healthy-Hematopoiesis.SCE.rds",
         "input/scATAC-Healthy-Hematopoiesis.SCE.rds",
-        "input/Homo_sapiens.GRCh37.87.gtf.gz"
+        "input/Homo_sapiens.GRCh37.87.gtf.gz",
+	"input/hg19.chrom.sizes"
 
 rule download_scRNA:
     output:
@@ -35,3 +36,14 @@ rule download_GTF:
         """
         wget -O {output} {params.url}
         """
+
+rule download_sizes:
+    output:
+        "input/hg19.chrom.sizes"
+    params:
+        url=config['chromSizesFile']
+    shell:
+        """
+        wget -O {output} {params.url}
+        """
+

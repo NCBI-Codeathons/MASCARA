@@ -6,3 +6,6 @@ scRNAFile:
 
 scATACFile:
   "https://jeffgranja.s3.amazonaws.com/MPAL-10x/Supplementary_Data/Healthy-Data/scATAC-Healthy-Hematopoiesis-191120.rds"
+
+chromSizesFile:
+  "https://hgdownload.cse.ucsc.edu/goldenPath/hg19/bigZips/hg19.chrom.sizes"
