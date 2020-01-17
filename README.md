@@ -22,7 +22,13 @@ NAME uses ACTIONet to first call cell states based on normal gene expression. It
 
 [Docker](https://www.docker.com/) - an independent container platform
 
-Taking a sce object for both scRNA and scATAC
+#### Visualization
+[R](https://www.r-project.org/)
+
+Install shiny within R
+```
+install.packages("shiny")
+```
 
 ### Workflow
 
@@ -51,7 +57,13 @@ docker build https://github.com/NCBI-Codeathons/Defining-Cell-Fate-Regulators-in
 
 TBD
 
+#### Visualization
+
+SHINY APP
+
 ### Input File Format
+
+Takes an sce object for both scRNA and scATAC
 
 ### Output
 
