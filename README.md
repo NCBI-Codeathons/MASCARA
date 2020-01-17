@@ -19,11 +19,12 @@ The aim is to take a dataset which includes both single cell RNA and ATAC seqs, 
 
 ### Dependencies
 
-The goal of our workflow is to be containerized so that all packages and dependencies are included in the docker image. We only require a few R packages in order to visualize the output from MASCARA.
+The goal of our workflow is to be containerized so that all packages and dependencies are included in the docker image. We only require snakemake to run the pipeline and few R packages in order to visualize the output from MASCARA.
 
 #### Pipeline
 [Docker](https://www.docker.com/) - an independent container platform
 
+[Snakemake](https://snakemake.readthedocs.io/en/stable/)
 #### Visualization
 [R](https://www.r-project.org/) - A software environment for statistical computing and graphics
 
