@@ -2,16 +2,15 @@
 
 library(SingleCellExperiment)
 library(ACTIONet)
+source("src/functions.R")
 
 args = commandArgs(trailingOnly=TRUE)
-## if (length(args) < 2) {
-##     stop("Incorrect number of arguments!\nUsage:\n> run_actionet.R <sceFile> <genome>\n")
-## }
 
-arg.sce <- args[1]
-arg.genome <- args[2]
+sce.RNA <- args[1]
+ACTIONet.out.RNA = run.ACTIONet.RNA(sce.RNA)
 
 ## Do stuff here
 
 ## save files
-##saveRDS(some_files)
+saveRDS(ACTIONet.out.RNA, file = "ACTIONet_out_RNA.rds")
+
