@@ -26,9 +26,9 @@ NAME uses ACTIONet to first call cell states based on normal gene expression. It
 #### Visualization
 [R](https://www.r-project.org/) - A software environment for statistical computing and graphics
 
-Install shiny within R
+Install shiny and network within R
 ```
-install.packages("shiny")
+install.packages(c("shiny","networkD3"))
 ```
 
 ### Workflow
@@ -70,18 +70,32 @@ TBD
 
 In R:
 
-Load network.tsv (output from MASCARA)
+Load the libraries
+```
+library(shiny)
+library(networkD3)
+```
 
+Load network.tsv (output from MASCARA)
 ```
 x <- read.table("network.tsv",header=TRUE,sep="\t")
 ```
 
-Run Shiny App
+Set up the user interface and the server for Shiny
+
+```
+source("MASCARA_shiny_UI.R")
 
 ```
 
+Start the Shiny App
+
+```
+shinyApp(ui = ui, server = server)
 ```
 
+
+INSERT PICTURE OF THE SHINY APP
 
 
 
