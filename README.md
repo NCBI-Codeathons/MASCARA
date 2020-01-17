@@ -58,9 +58,9 @@ Two SingleCellExperiment [(sce)](https://osca.bioconductor.org/data-infrastructu
 
 ### Output
 
-**network.tsv** - tab-delimited file containing the cluster specific transcription factors and downstream target genes. INSERT COLUMN IDS
-**ACTIONetOUT.rds** - FILES WITH LOTS OF THINGS 
-**ACTIONetOUT_inferred.rds** - FILES WITH LOTS OF THINGS
+* **network.tsv** - tab-delimited file containing the cluster specific transcription factors and downstream target genes. Column IDs are Celltype, TF (Transcription Factor), TG (Targets), weight (interaction strength on a scale from -1 to 1)  
+* **ACTIONetOUT.rds** - FILES WITH LOTS OF THINGS 
+* **ACTIONetOUT_inferred.rds** - FILES WITH LOTS OF THINGS
 
 <img width="1111" alt="results" src="https://user-images.githubusercontent.com/59709364/72639224-19f7b180-3933-11ea-866d-b902f5158102.png">
 
