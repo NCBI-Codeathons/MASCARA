@@ -24,7 +24,8 @@ The goal of our workflow is to be containerized so that all packages and depende
 #### Pipeline
 [Docker](https://www.docker.com/) - an independent container platform
 
-[Snakemake](https://snakemake.readthedocs.io/en/stable/)
+[Snakemake](https://snakemake.readthedocs.io/en/stable/) - a workflow management tool.
+
 #### Visualization
 [R](https://www.r-project.org/) - A software environment for statistical computing and graphics
 
