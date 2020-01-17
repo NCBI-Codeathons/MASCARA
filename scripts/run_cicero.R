@@ -2,6 +2,7 @@
 
 library(SingleCellExperiment)
 library(cicero)
+library(monocle3)
 
 args = commandArgs(trailingOnly=TRUE)
 if (length(args) == 3) {
