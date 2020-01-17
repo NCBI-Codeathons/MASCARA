@@ -61,8 +61,6 @@ Two SingleCellExperiment [(sce)](https://osca.bioconductor.org/data-infrastructu
 ### Output
 
 * **network.tsv** - tab-delimited file containing the cluster specific transcription factors and downstream target genes. Column IDs are Celltype, TF (Transcription Factor), TG (Targets), weight (interaction strength on a scale from -1 to 1)  
-* **ACTIONetOUT.rds** - FILES WITH LOTS OF THINGS 
-* **ACTIONetOUT_inferred.rds** - FILES WITH LOTS OF THINGS
 
 <img width="1111" alt="results" src="https://user-images.githubusercontent.com/59709364/72639224-19f7b180-3933-11ea-866d-b902f5158102.png">
 
@@ -108,14 +106,18 @@ In the future we hope to integrate a pseudotime analysis as a method to understa
 
 
 
+#### Citations
+[Data](https://github.com/GreenleafLab/MPAL-Single-Cell-2019) used in tutorial:
+
+* Granja, J.M., Klemm, S., McGinnis, L.M. et al. Single-cell multiomic analysis identifies regulatory programs in mixed-phenotype acute leukemia. Nat Biotechnol 37, 1458–1465 (2019) doi:10.1038/s41587-019-0332-7
+
+**Packages/Applications**
+* [Docker](https://www.docker.com/) - Dirk Merkel. 2014. Docker: lightweight Linux containers for consistent development and deployment. Linux J. 2014, 239, Article 2 (March 2014).
+* [Cicero](https://cole-trapnell-lab.github.io/cicero-release/) - Pliner, H. A., Packer, J. S., McFaline-Figueroa, J. L., Cusanovich, D. A., Daza, R. M., Aghamirzaie, D., … Trapnell, C. (2018). Cicero Predicts cis-Regulatory DNA Interactions from Single-Cell Chromatin Accessibility Data. Molecular cell, 71(5), 858–871.e8. doi:10.1016/j.molcel.2018.06.044
+* [ChromVar](https://github.com/GreenleafLab/chromVAR) - Schep, A., Wu, B., Buenrostro, J. et al. chromVAR: inferring transcription-factor-associated accessibility from single-cell epigenomic data. Nat Methods 14, 975–978 (2017) doi:10.1038/nmeth.4401
+* [ACTIONet](https://github.com/shmohammadi86/ACTIONet) - Mohammadi, S., Davila-Velderrain, J., Kellis, M. (2019) A multiresolution framework to characterize single-cell state landscapes. bioRxiv 746339; doi: doi.org/10.1101/746339
+
+
+#### Team Members
 <img src="https://user-images.githubusercontent.com/59709364/72642061-84abeb80-3939-11ea-866f-d788f7b9af0f.jpg" alt="mascara_team" width="400" height="300">
-
-
-#### Citation
-Data used in tutorial
-That one Paper.
-
-Cicero
-ChromVar
-ACTIONet
 
