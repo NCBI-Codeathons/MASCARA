@@ -1,4 +1,4 @@
-# Defining-Cell-Fate-Regulators-in-Multi-omic-Single-Cell-Developmental-Datasets
+# MASCARA (**M**ultiomic **A**nalysis of **S**ingle **C**ell **A**TAC-seq and **R**NA-seq)
 
 
 ## A simple method for identifying transcription factor mediated regulatory networks from scRNA and scATAC data
@@ -51,7 +51,16 @@ docker pull mfansler/mascara
 Or the Docker image can be manually build using
 ```
 docker build https://github.com/NCBI-Codeathons/Defining-Cell-Fate-Regulators-in-Multi-omic-Single-Cell-Developmental-Datasets.git#master:docker
+
 ```
+
+### Input File Format
+
+Takes an sce object for both scRNA and scATAC
+
+### Output
+
+**network.tsv** - tab-delimited file containing the cluster specific transcription factors and downstream target genes. INSERT COLUMN IDS
 
 ### Tutorial
 
@@ -59,13 +68,22 @@ TBD
 
 #### Visualization
 
-SHINY APP
+In R:
 
-### Input File Format
+Load network.tsv (output from MASCARA)
 
-Takes an sce object for both scRNA and scATAC
+```
+x <- read.table("network.tsv",header=TRUE,sep="\t")
+```
 
-### Output
+Run Shiny App
+
+```
+
+```
+
+
+
 
 ### Future Directions
 
