@@ -8,16 +8,12 @@ rule actionet_rna:
         rnaSCE=config['scRNASCE'],
         script="scripts/run_actionet.R"
     output:
-        de="data/intermediate/rna.de.genes.rds",
-        geneState="data/intermediate/rna.gene.cellstate.rds",
-        tfState="data/intermediate/rna.tf.cellstate.rds"
-    params:
-        genome=config['genome']
+        ACTIONet_out="data/intermediate/rna.ACTIONet.out.rds"
     singularity:
         "docker://mfansler/mascara"
     shell:
         """
-        {input.script} {input.rnaSCE} {params.genome}
+        {input.script} {input.rnaSCE}
         touch {output}
         """
 
