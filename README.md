@@ -92,7 +92,7 @@ Start the Shiny App
 shinyApp(ui = ui, server = server)
 ```
 
-![alt-text](https://github.com/NCBI-Codeathons/MASCARA/blob/master/files/Animated%20GIF-source.gif)
+![alt-text](https://media.giphy.com/media/Kc1f8O613s8yzkdCxV/source.mp4)
 
 ### Future Directions
 
