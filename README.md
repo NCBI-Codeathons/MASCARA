@@ -20,6 +20,7 @@ NAME uses ACTIONet to first call cell states based on normal gene expression. It
 
 ### Dependencies
 
+#### Pipeline
 [Docker](https://www.docker.com/) - an independent container platform
 
 #### Visualization
