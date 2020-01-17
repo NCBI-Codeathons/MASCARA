@@ -1,4 +1,4 @@
-# Defining-Cell-Fate-Regulators-in-Multi-omic-Single-Cell-Developmental-Datasets
+# MASCARA (**M**ultiomic **A**nalysis of **S**ingle **C**ell **A**TAC-seq and **R**NA-seq)
 
 
 ## A simple method for identifying transcription factor mediated regulatory networks from scRNA and scATAC data
@@ -20,9 +20,16 @@ NAME uses ACTIONet to first call cell states based on normal gene expression. It
 
 ### Dependencies
 
+#### Pipeline
 [Docker](https://www.docker.com/) - an independent container platform
 
-Taking a sce object for both scRNA and scATAC
+#### Visualization
+[R](https://www.r-project.org/) - A software environment for statistical computing and graphics
+
+Install shiny and network within R
+```
+install.packages(c("shiny","networkD3"))
+```
 
 ### Workflow
 
@@ -47,13 +54,50 @@ Or the Docker image can be manually build using
 docker build https://github.com/NCBI-Codeathons/Defining-Cell-Fate-Regulators-in-Multi-omic-Single-Cell-Developmental-Datasets.git#master:docker
 ```
 
+### Input File Format
+
+Two SingleCellExperiment [(sce)](https://osca.bioconductor.org/data-infrastructure.html) *class* files. One each for scRNA-seq and scATAC-seq.
+
+### Output
+
+**network.tsv** - tab-delimited file containing the cluster specific transcription factors and downstream target genes. INSERT COLUMN IDS
+
 ### Tutorial
 
 TBD
 
-### Input File Format
+#### Visualization
 
-### Output
+In R:
+
+Load the libraries
+```
+library(shiny)
+library(networkD3)
+```
+
+Load network.tsv (output from MASCARA)
+```
+x <- read.table("network.tsv",header=TRUE,sep="\t")
+```
+
+Set up the user interface and the server for Shiny with the R functions provided.
+
+```
+source("MASCARA_shiny_UI.R")
+
+```
+
+Start the Shiny App
+
+```
+shinyApp(ui = ui, server = server)
+```
+
+
+INSERT PICTURE OF THE SHINY APP
+
+
 
 ### Future Directions
 
