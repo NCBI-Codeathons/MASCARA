@@ -62,7 +62,8 @@ Two SingleCellExperiment [(sce)](https://osca.bioconductor.org/data-infrastructu
 
 ### Tutorial
 
-TBD
+<img width="1111" alt="results" src="https://user-images.githubusercontent.com/59709364/72639224-19f7b180-3933-11ea-866d-b902f5158102.png">
+
 
 #### Visualization
 
