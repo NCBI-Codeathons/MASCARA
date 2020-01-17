@@ -1,0 +1,37 @@
+configfile: "config_data.yaml"
+
+rule all:
+    input:
+        "input/scRNA-Healthy-Hematopoiesis.SCE.rds",
+        "input/scATAC-Healthy-Hematopoiesis.SCE.rds",
+        "input/Homo_sapiens.GRCh37.87.gtf.gz"
+
+rule download_scRNA:
+    output:
+        "input/scRNA-Healthy-Hematopoiesis.SCE.rds"
+    params:
+        url=config['scRNAFile']
+    shell:
+        """
+        wget -O {output} {params.url} 
+        """
+
+rule download_scATAC:
+    output:
+        "input/scATAC-Healthy-Hematopoiesis.SCE.rds"
+    params:
+        url=config['scATACFile']
+    shell:
+        """
+        wget -O {output} {params.url} 
+        """
+
+rule download_GTF:
+    output:
+        "input/Homo_sapiens.GRCh37.87.gtf.gz"
+    params:
+        url=config['gtfFile']
+    shell:
+        """
+        wget -O {output} {params.url}
+        """
