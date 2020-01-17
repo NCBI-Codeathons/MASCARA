@@ -1,4 +1,4 @@
-mascara_atac<-function(sce_file="PBMC/scATAC-Healthy-Hematopoiesis-191120.rds",gtf="PBMC/Homo_sapiens.GRCh37.87.gtf",chsz="PBMC/hg19.chrom.sizes"){
+mascara_atac<-function(sce_file="scATAC-seq_data.rds",gtf="genome.gtf",chsz="genome.chrom.sizes"){
 		## Dependencies
 		require(SingleCellExperiment)
 		require(cicero)
@@ -27,7 +27,7 @@ mascara_atac<-function(sce_file="PBMC/scATAC-Healthy-Hematopoiesis-191120.rds",g
 		
 		## Interaction Network
 		chr_sizes<-read.table(chsz)
-	conns <- run_cicero(cicero_cds,chr_sizes)
+		conns <- run_cicero(cicero_cds,chr_sizes)
 		
 		## Gene annotation file import
 		gene_anno <- rtracklayer::readGFF(gtf) 
