@@ -23,7 +23,7 @@ NAME uses ACTIONet to first call cell states based on normal gene expression. It
 [Docker](https://www.docker.com/) - an independent container platform
 
 #### Visualization
-[R](https://www.r-project.org/)
+[R](https://www.r-project.org/) - A software environment for statistical computing and graphics
 
 Install shiny within R
 ```
