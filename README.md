@@ -26,8 +26,7 @@ Taking a sce object for both scRNA and scATAC
 
 ### Workflow
 
-PICTURE OF THE PROCESSES
-
+![mascara_pipeline_diagram](https://user-images.githubusercontent.com/59709364/72620669-c161ed80-390d-11ea-88cd-2aae69ac46d0.png)
 
 ### Workflow
 TBD
