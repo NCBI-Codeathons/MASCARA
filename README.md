@@ -51,12 +51,11 @@ docker pull mfansler/mascara
 Or the Docker image can be manually build using
 ```
 docker build https://github.com/NCBI-Codeathons/Defining-Cell-Fate-Regulators-in-Multi-omic-Single-Cell-Developmental-Datasets.git#master:docker
-
 ```
 
 ### Input File Format
 
-Takes an sce object for both scRNA and scATAC
+Two SingleCellExperiment [(sce)](https://osca.bioconductor.org/data-infrastructure.html) *class* files. One each for scRNA-seq and scATAC-seq.
 
 ### Output
 
