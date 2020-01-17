@@ -100,11 +100,11 @@ shinyApp(ui = ui, server = server)
 
 ### Example Output
 
-![alt-text](https://media.giphy.com/media/Kc1f8O613s8yzkdCxV/giphy.gif)
+![shiny_app_example](https://media.giphy.com/media/Kc1f8O613s8yzkdCxV/giphy.gif)
 
 ### Future Directions
 
 In the future we hope to integrate a pseudotime analysis as a method to understand how regulatory networks change at different time points during cell type differentiation and or disease progression. Incorporating a trajectory inference may help to better characterize the evolution and divergences between cell clusters. 
 
-![mascara_team](https://user-images.githubusercontent.com/59709364/72642061-84abeb80-3939-11ea-866f-d788f7b9af0f.jpg)
+![mascara_team](https://user-images.githubusercontent.com/59709364/72642061-84abeb80-3939-11ea-866f-d788f7b9af0f.jpg,width=200,height=200)
 
