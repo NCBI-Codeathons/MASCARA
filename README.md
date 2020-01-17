@@ -81,7 +81,7 @@ Load network.tsv (output from MASCARA)
 x <- read.table("network.tsv",header=TRUE,sep="\t")
 ```
 
-Set up the user interface and the server for Shiny
+Set up the user interface and the server for Shiny with the R functions provided.
 
 ```
 source("MASCARA_shiny_UI.R")
