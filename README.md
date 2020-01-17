@@ -92,6 +92,8 @@ Start the Shiny App
 shinyApp(ui = ui, server = server)
 ```
 
+### Example Output
+
 ![alt-text](https://media.giphy.com/media/Kc1f8O613s8yzkdCxV/giphy.gif)
 
 ### Future Directions
