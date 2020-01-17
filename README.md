@@ -49,7 +49,7 @@ docker pull mfansler/mascara
 
 Or the Docker image can be manually build using
 ```
-docker build https://github.com/NCBI-Codeathons/Defining-Cell-Fate-Regulators-in-Multi-omic-Single-Cell-Developmental-Datasets.git#master:docker
+docker build https://github.com/NCBI-Codeathons/MASCARA.git#master:docker
 ```
 
 ### Input File Format
