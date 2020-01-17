@@ -1,7 +1,7 @@
 configfile: "config.yaml"
 
 rule all:
-    input: "data/output/network.tsv"
+    input: "data/output/final.rds"
 
 rule actionet_rna:
     input:
@@ -14,7 +14,6 @@ rule actionet_rna:
     shell:
         """
         {input.script} {input.rnaSCE}
-        touch {output}
         """
 
 rule cicero:
@@ -31,7 +30,45 @@ rule cicero:
     shell:
         """
         {input.script} {input.atacSCE} {input.gtf}
-        touch {output}
         """
 
+rule chromVAR:
+    input:
+        script="scripts/run_chromVAR.R",
+        atacSCE=config['scATACSCE']
+    output:
+        sce="data/intermediate/sce.chromVAR.rds"
+    singularity:
+        "docker://mfansler/mascara"
+    shell:
+        """
+        {input.script} {input.atacSCE}
+        """
+        
+rule actionet_inferred_rna:
+    input:
+        rnaSCE="data/intermediate/sce.inferredRNA.rds",
+        script="scripts/run_actionet_inferredRNA.R"
+    output:
+        ACTIONet_out="data/intermediate/ACTIONet_out_inferredRNA.rds"
+    singularity:
+        "docker://mfansler/mascara"
+    shell:
+        """
+        {input.script} {input.rnaSCE}
+        """
 
+rule run_match_cellstates:
+    input:
+        script="scripts/run_match_cellstates.R",
+        sceRNA="data/intermediate/rna.ACTIONet.out.rds",
+        sceInferredRNA="data/intermediate/ACTIONet_out_inferredRNA.rds",
+        sceChromVAR="data/intermediate/sce.chromVAR.rds"
+    output:
+        "data/output/final.rds"
+    singularity:
+        "docker://mfansler/mascara"
+    shell:
+        """
+        Rscript {input.script} {input.sceRNA} {input.sceInferredRNA} {input.sceChromVAR}
+        """
