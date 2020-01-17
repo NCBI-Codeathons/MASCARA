@@ -1,4 +1,4 @@
-# MASCARA (** M **ultiomic **A**nalysis of **S**ingle **C**ell **A**TAC-seq and **R**N**A**-seq)
+# MASCARA (Multiomic Analysis of Single Cell ATAC-seq and RNA-seq)
 
 <img width="1178" alt="Screen Shot 2020-01-17 at 11 50 36 AM" src="https://user-images.githubusercontent.com/59709364/72636703-a606da80-392d-11ea-8c33-9f680fd33c5a.png">
 
@@ -35,9 +35,6 @@ install.packages(c("shiny","networkD3"))
 ### Workflow
 
 ![mascara_pipeline_diagram]<img width="729" alt="Screen Shot 2020-01-17 at 1 27 48 PM" src="https://user-images.githubusercontent.com/59709364/72636567-47416100-392d-11ea-8799-1a2990a69c3e.png">)
-
-### Workflow
-TBD
 
 ### Deliverables
 
