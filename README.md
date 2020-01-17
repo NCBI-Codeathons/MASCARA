@@ -1,5 +1,6 @@
 # MASCARA (**M**ultiomic **A**nalysis of **S**ingle **C**ell **A**TAC-seq and **R**NA-seq)
 
+<img width="1178" alt="Screen Shot 2020-01-17 at 11 50 36 AM" src="https://user-images.githubusercontent.com/59709364/72636703-a606da80-392d-11ea-8c33-9f680fd33c5a.png">
 
 ## A simple method for identifying transcription factor mediated regulatory networks from scRNA and scATAC data
 
