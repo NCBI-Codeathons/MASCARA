@@ -92,7 +92,7 @@ Start the Shiny App
 shinyApp(ui = ui, server = server)
 ```
 
-![alt-text](https://media.giphy.com/media/Kc1f8O613s8yzkdCxV/source.mp4)
+![alt-text](https://media.giphy.com/media/Kc1f8O613s8yzkdCxV/giphy.gif)
 
 ### Future Directions
 
