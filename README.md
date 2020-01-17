@@ -59,13 +59,17 @@ Two SingleCellExperiment [(sce)](https://osca.bioconductor.org/data-infrastructu
 ### Output
 
 **network.tsv** - tab-delimited file containing the cluster specific transcription factors and downstream target genes. INSERT COLUMN IDS
-
-### Tutorial
+**ACTIONetOUT.rds** - FILES WITH LOTS OF THINGS 
+**ACTIONetOUT_inferred.rds** - FILES WITH LOTS OF THINGS
 
 <img width="1111" alt="results" src="https://user-images.githubusercontent.com/59709364/72639224-19f7b180-3933-11ea-866d-b902f5158102.png">
 
 
-#### Visualization
+### Tutorial
+
+TBD
+
+#### Visualization with Shiny
 
 In R:
 
