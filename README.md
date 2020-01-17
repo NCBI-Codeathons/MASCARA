@@ -93,8 +93,7 @@ shinyApp(ui = ui, server = server)
 ```
 
 
-INSERT PICTURE OF THE SHINY APP
-
+<iframe src="https://giphy.com/embed/Kc1f8O613s8yzkdCxV" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/Kc1f8O613s8yzkdCxV">via GIPHY</a></p>
 
 
 ### Future Directions
