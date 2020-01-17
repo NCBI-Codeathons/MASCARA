@@ -11,7 +11,7 @@ BiocManager::install(c("GenomicRanges", "Gviz", "rtracklayer", 'BiocGenerics',
                        'DelayedArray', 'DelayedMatrixStats',
                        'limma', 'S4Vectors', 'SingleCellExperiment',
                        'SummarizedExperiment', 'batchelor', 'chromVAR',
-                       'JASPAR2016','motifmatchr'))
+                       'JASPAR2016','motifmatchr','monocle'))
 
 ################################################################################
 ## GITHUB PACKAGES
