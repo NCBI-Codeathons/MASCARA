@@ -12,11 +12,9 @@
 * [Marygrace Trousdell](https://www.linkedin.com/in/marygrace-trousdell/)
 
 ### Goals and Aims
-The goal of to develop a pipeline for the identification of transcriptional regulators important in the various clusters identified by single cell sequencing. It is possible to identify regulators of related networks in RNA-seq via looking for  gene regulatory networks in transcriptomes of the same cells in different conditions. This has been successful in both bulk and single cell. It is also possible to identify transcription factor binding in ATAC-seq via searching for motif enrichment in the accessible chromatin regions. This has also been done successfully in both bulk and single cell studies. The aim to take a dataset which includes both single cell RNA and ATAC seqs, identify cell type clusters in them, and then integrate them in order to find different levels of cell type regulators. We would take this opportunity to standardize and automate various aspects of this pipeline, especially the integration between data types, for future uses, and also to allow direct flow into other levels of analysis. A specific example of this downstream preparation would be to ask if this could be integrated with a pseudotime analysis, in order to understand how regulatory networks change at different time points of cell type differentiation.
+The advent of single cell sequencing technologies have now allowed for the identification and characterization of rare cell types. Identifying the key transcription factors and downstream target genes is important for understanding the biology of these rare populations. The goal of this project is to develop a workflow that identifies and ranks transcriptional regulators important in the various cell states as identified by single cell sequencing. By combining both scRNA-seq and scATAC-seq we can increase our power to identify biologically meaningful gene regulatory networks.
 
-NAME is a containerized workflow that is able to identify biologically important gene regulatory networks by leveraging data from scRNA and scATAC experiments.
-
-NAME uses ACTIONet to first call cell states based on normal gene expression. It then identifies differential gene expression between cell states and is able to identify and prioritize transcription factor mediated gene regulatory networks based on data from the CHEA database (LINK). These lists are further refined and influenced by the ATAC-seq data.
+The aim is to take a dataset which includes both single cell RNA and ATAC seqs, identify cell type clusters in them, and then integrate them in order to find different levels of cell type regulators. We would take this opportunity to standardize and automate various aspects of this pipeline, especially the integration between data types, for future uses, and also to allow direct flow into other levels of analysis. A specific example of this downstream preparation would be to ask if this could be integrated with a pseudotime analysis, in order to understand how regulatory networks change at different time points of cell type differentiation.
 
 ### Dependencies
 
@@ -87,7 +85,6 @@ Set up the user interface and the server for Shiny with the R functions provided
 
 ```
 source("MASCARA_shiny_UI.R")
-
 ```
 
 Start the Shiny App
@@ -103,4 +100,6 @@ INSERT PICTURE OF THE SHINY APP
 
 ### Future Directions
 
-Perhaps integrate within our pipeline a pseudotime analysis, in order to understand how regulatory networks change at different time points of cell type differentiation. Incorporating a trajectory inference may help to better characterize the evolution and divergences between cell clusters.
+In the future we hope to integrate a pseudotime analysis as a method to understand how regulatory networks change at different time points during cell type differentiation and or disease progression. Incorporating a trajectory inference may help to better characterize the evolution and divergences between cell clusters. 
+
+
