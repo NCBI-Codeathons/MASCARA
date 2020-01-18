@@ -29,9 +29,9 @@ The goal of our workflow is to be containerized so that all packages and depende
 #### Visualization
 [R](https://www.r-project.org/) - A software environment for statistical computing and graphics
 
-Install shiny and network within R
+Install shiny, networkD3, and dplyr within R
 ```
-install.packages(c("shiny","networkD3"))
+install.packages(c("shiny", "networkD3", "dplyr"))
 ```
 
 ### Workflow
@@ -71,30 +71,13 @@ TBD
 
 #### Visualization with Shiny
 
-In R:
-
-Load the libraries
-```
-library(shiny)
-library(networkD3)
-```
-
-Load network.tsv (output from MASCARA)
-```
-x <- read.table("network.tsv",header=TRUE,sep="\t")
-```
-
-Set up the user interface and the server for Shiny with the R functions provided.
+Once the pipeline has finished running, there will be a final output file `data/output/network.tsv`. These results can be visualized and explored interactively in a Shiny app by running the following from the command line
 
 ```
-source("MASCARA_shiny_UI.R")
+Rscript shinyapp/app.R data/output/network.tsv
 ```
 
-Start the Shiny App
-
-```
-shinyApp(ui = ui, server = server)
-```
+This will automatically launch open the app in the default web browser.
 
 ### Example Output
 

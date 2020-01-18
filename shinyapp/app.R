@@ -1,3 +1,15 @@
+library(shiny)
+library(networkD3)
+library(dplyr)
+
+## parse argument(s)
+args <- commandArgs(trailingOnly=TRUE)
+networkFile <- args[1]
+
+## load provided file
+x <- read.table(networkFile, header=TRUE,sep="\t")
+
+## shiny UI
 ui <- shinyUI(pageWithSidebar(
   titlePanel("MASCARA Output"),
   sidebarPanel(
@@ -14,6 +26,7 @@ ui <- shinyUI(pageWithSidebar(
 )
 )
 
+## shiny server
 server <- function(input, output, session) {
   tab <- reactive({
     x %>% 
@@ -43,7 +56,6 @@ server <- function(input, output, session) {
     selectizeInput("TF","Choose A Transcription Factor", choices = c("select" = "", choice_tf()))
   })
   
-  
   output$Table <- renderTable({
     tab()
   }) 
@@ -55,3 +67,6 @@ server <- function(input, output, session) {
   })
   
 }
+
+## Launch app in browser
+shinyApp(ui=ui, server=server, options=list(launch.browser=TRUE))
