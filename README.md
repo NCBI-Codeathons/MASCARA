@@ -22,7 +22,7 @@ The aim is to take a dataset which includes both single cell RNA and ATAC seqs, 
 The goal of our workflow is to be containerized so that all packages and dependencies are included in the docker image. We only require snakemake to run the pipeline and few R packages in order to visualize the output from MASCARA.
 
 #### Pipeline
-[Docker](https://www.docker.com/) - an independent container platform
+[Singularity](https://sylabs.io/docs/#singularity) - a container platform.
 
 [Snakemake](https://snakemake.readthedocs.io/en/stable/) - a workflow management tool.
 
@@ -44,19 +44,20 @@ A workflow that outputs a table containing a ranked transcription factor mediate
 
 ### Installation
 
-Pull the Docker image
+Clone this repository using
+
 ```
-docker pull mfansler/mascara
+git clone https://github.com/NCBI-Codeathons/MASCARA.git
 ```
 
-Or the Docker image can be manually build using
-```
-docker build https://github.com/NCBI-Codeathons/MASCARA.git#master:docker
-```
+### Input Files
 
-### Input File Format
+The pipeline requires as input:
 
-Two SingleCellExperiment [(sce)](https://osca.bioconductor.org/data-infrastructure.html) *class* files. One each for scRNA-seq and scATAC-seq.
+ - scRNA-seq result - a [SingleCellExperiment](https://osca.bioconductor.org/data-infrastructure.html) object as .Rds file
+ - scATAC-seq result - a [SingleCellExperiment](https://osca.bioconductor.org/data-infrastructure.html) object as .Rds file
+ - transcriptome - a GTF file
+ - chrom.sizes file
 
 ### Output
 
@@ -67,9 +68,28 @@ Two SingleCellExperiment [(sce)](https://osca.bioconductor.org/data-infrastructu
 
 ### Tutorial
 
-TBD
+#### 1(a): Running Example Data
+The full example data can be downloaded by navigating to the `data/` folder and running
 
-#### Visualization with Shiny
+```
+snakemake
+```
+This will download two `.Rds` files, representing the scRNA-seq and scATAC-seq `SingleCellExperiment` objects from [Granja, et al., 2019](https://github.com/GreenleafLab/MPAL-Single-Cell-2019), as well as GTF and chrom.sizes files for **hg19**.
+
+The main pipeline is preconfigured (see `config.yaml`) to uses these downloaded files.  The full pipeline can then be run by navigating to the root of the repository (`MASCARA/`) and running
+```
+snakemake --use-singularity
+```
+
+#### 1(b): Running Other Data
+To run user-supplied data, edit the `config.yaml` file to specify the locations of the input files (scRNA-seq .Rds, scATAC-seq .Rds, transcriptome GTF, and chrome.sizes). Be sure to also change the `genome:` value to match the genome that was used in the alignments. 
+
+From the root of the repository (`MASCARA/`), run the pipeline using
+```
+snakemake --use-singularity
+```
+
+#### 2: Visualization with Shiny
 
 Once the pipeline has finished running, there will be a final output file `data/output/network.tsv`. These results can be visualized and explored interactively in a Shiny app by running the following from the command line
 
