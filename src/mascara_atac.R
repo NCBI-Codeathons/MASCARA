@@ -55,6 +55,7 @@ mascara_atac<-function(sce_file="scATAC-seq_data.rds",gtf="genome.gtf",chsz="gen
 		cicero_gene_activities <- normalize_gene_activities(unnorm_ga, num_genes)
 
 		## Conversion to sce
-		sce_output<-SingleCellExperiment(assays=list(counts=cicero_gene_activities)))
+		sce_output<-SingleCellExperiment(assays=list(counts=cicero_gene_activities))
+		saveRDS(sce_output,"cicero_out.rds")
 		return(sce_output)
 }
