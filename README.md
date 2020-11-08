@@ -65,7 +65,7 @@ The pipeline requires as input:
 
 * **network.tsv** - tab-delimited file containing the cluster specific transcription factors and downstream target genes. Column IDs are Celltype, TF (Transcription Factor), TG (Targets), weight (interaction strength on a scale from -1 to 1)  
 
-<img width="1111" alt="results" src="https://user-images.githubusercontent.com/59709364/72639224-19f7b180-3933-11ea-866d-b902f5158102.png">
+<img width="1111" alt="chart" src="https://user-images.githubusercontent.com/59709364/72639224-19f7b180-3933-11ea-866d-b902f5158102.png">
 
 
 ### Tutorial
