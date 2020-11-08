@@ -1,7 +1,7 @@
 genome: "hg19"
 
-gtfFile: "data/input/Home_sapiens.GRCh37.87.gtf.gz"
+gtfFile: "data/input/Homo_sapiens.GRCh37.87.gtf.gz"
 
-scRNASCE: "input/scRNA-Healthy-Hematopoiesis.SCE.rds"
+scRNASCE: "data/input/scRNA-Healthy-Hematopoiesis.SCE.rds"
 
-scATACSCE: "input/scATAC-Healthy-Hematopoiesis.SCE.rds"
+scATACSCE: "data/input/scATAC-Healthy-Hematopoiesis.SCE.rds"
