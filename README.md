@@ -71,9 +71,6 @@ The pipeline requires as input:
 
 <img width="1111" alt="results" src="https://user-images.githubusercontent.com/59709364/72639224-19f7b180-3933-11ea-866d-b902f5158102.png">
 
-11/8/20 - Added gene information for genes contained within the network, including ensemble gene ID, gene information, and location
-
-<img src="https://github.com/NCBI-Codeathons/MASCARA/blob/master/src/Chart.png">
 
 ### Tutorial
 
@@ -85,10 +82,12 @@ snakemake
 ```
 This will download two `.Rds` files, representing the scRNA-seq and scATAC-seq `SingleCellExperiment` objects from [Granja, et al., 2019](https://github.com/GreenleafLab/MPAL-Single-Cell-2019), as well as GTF and chrom.sizes files for **hg19**.
 
-Update 11/8/20: Sample data now PBMC same cell single cell RNA and ATAC seq, here:
+Update 11/8/20: Sample data now available for PBMC same cell single cell RNA and ATAC seq which has been verified using Seurat pipelines:
 
 ATAC: http://cf.10xgenomics.com/samples/cell-atac/1.0.1/atac_v1_pbmc_10k/atac_v1_pbmc_10k_filtered_peak_bc_matrix.h5
+
 ATAC Meta Data: http://cf.10xgenomics.com/samples/cell-atac/1.0.1/atac_v1_pbmc_10k/atac_v1_pbmc_10k_singlecell.csv
+
 RNA: http://cf.10xgenomics.com/samples/cell-exp/3.0.0/pbmc_10k_v3/pbmc_10k_v3_filtered_feature_bc_matrix.h5
 
 The main pipeline is preconfigured (see `config.yaml`) to uses these downloaded files.  The full pipeline can then be run by navigating to the root of the repository (`MASCARA/`) and running
@@ -117,6 +116,11 @@ This will automatically launch open the app in the default web browser.
 ### Example Output
 
 ![shiny_app_example](https://media.giphy.com/media/Kc1f8O613s8yzkdCxV/giphy.gif)
+
+11/8/20 - Added gene information for genes contained within the network, including ensemble gene ID, gene information, and location
+
+<img src="https://github.com/NCBI-Codeathons/MASCARA/blob/master/src/Chart.png">
+
 
 ### Future Directions
 
