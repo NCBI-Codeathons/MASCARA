@@ -11,7 +11,11 @@
 * [Claire Marchal](https://www.linkedin.com/in/marchalc/)
 * [Shahin Mohammadi](https://www.linkedin.com/in/shmohammadi/)
 * [Marygrace Trousdell](https://www.linkedin.com/in/marygrace-trousdell/)
-* [Bala Desinghu](https://github.com/dmbala)
+* [Miranda Darby] (https://github.com/MMDarby)
+* [Bala Desinghu] (https://github.com/dmbala)
+* [Samantha Henry]
+* [Jenelys Ruiz Ortiz] (https://www.linkedin.com/in/jenelys-ruiz-16224316a/)
+
 
 
 ### Goals and Aims
@@ -65,8 +69,11 @@ The pipeline requires as input:
 
 * **network.tsv** - tab-delimited file containing the cluster specific transcription factors and downstream target genes. Column IDs are Celltype, TF (Transcription Factor), TG (Targets), weight (interaction strength on a scale from -1 to 1)  
 
-<img width="1111" alt="chart" src="https://user-images.githubusercontent.com/59709364/72639224-19f7b180-3933-11ea-866d-b902f5158102.png">
+<img width="1111" alt="results" src="https://user-images.githubusercontent.com/59709364/72639224-19f7b180-3933-11ea-866d-b902f5158102.png">
 
+11/8/20 - Added gene information for genes contained within the network, including ensemble gene ID, gene information, and location
+
+<img src="https://github.com/NCBI-Codeathons/MASCARA/blob/master/src/Chart.png">
 
 ### Tutorial
 
@@ -77,6 +84,12 @@ The full example data can be downloaded by navigating to the `data/` folder and 
 snakemake
 ```
 This will download two `.Rds` files, representing the scRNA-seq and scATAC-seq `SingleCellExperiment` objects from [Granja, et al., 2019](https://github.com/GreenleafLab/MPAL-Single-Cell-2019), as well as GTF and chrom.sizes files for **hg19**.
+
+Update 11/8/20: Sample data now PBMC same cell single cell RNA and ATAC seq, here:
+
+ATAC: http://cf.10xgenomics.com/samples/cell-atac/1.0.1/atac_v1_pbmc_10k/atac_v1_pbmc_10k_filtered_peak_bc_matrix.h5
+ATAC Meta Data: http://cf.10xgenomics.com/samples/cell-atac/1.0.1/atac_v1_pbmc_10k/atac_v1_pbmc_10k_singlecell.csv
+RNA: http://cf.10xgenomics.com/samples/cell-exp/3.0.0/pbmc_10k_v3/pbmc_10k_v3_filtered_feature_bc_matrix.h5
 
 The main pipeline is preconfigured (see `config.yaml`) to uses these downloaded files.  The full pipeline can then be run by navigating to the root of the repository (`MASCARA/`) and running
 ```
