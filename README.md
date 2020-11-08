@@ -21,7 +21,7 @@
 ### Goals and Aims
 The advent of single cell sequencing technologies have now allowed for the identification and characterization of rare cell types. Identifying the key transcription factors and downstream target genes is important for understanding the biology of these rare populations. The goal of this project is to develop a workflow that identifies and ranks transcriptional regulators important in the various cell states as identified by single cell sequencing. By combining both scRNA-seq and scATAC-seq we can increase our power to identify biologically meaningful gene regulatory networks.
 
-The aim is to take a dataset which includes both single cell RNA and ATAC seqs, identify cell type clusters in them, and then integrate them in order to find different levels of cell type regulators. We would take this opportunity to standardize and automate various aspects of this pipeline, especially the integration between data types, for future uses, and also to allow direct flow into other levels of analysis. A specific example of this downstream preparation would be to ask if this could be integrated with a pseudotime analysis, in order to understand how regulatory networks change at different time points of cell type differentiation.
+The aim is to take a dataset which includes both single cell RNA and ATAC seqs, identify cell type clusters in them, and then integrate them in order to find different levels of cell type regulators. We would take this opportunity to standardize and automate various aspects of this pipeline, especially the integration between data types, for future uses, and also to allow direct flow into other levels of analysis. Additionally, we hope to provide information to the user about the genes in the identified networks, in order to inform conclusions and future hypothesis/experiment decisions. 
 
 ### Dependencies
 
@@ -67,7 +67,7 @@ The pipeline requires as input:
 
 ### Output
 
-* **network.tsv** - tab-delimited file containing the cluster specific transcription factors and downstream target genes. Column IDs are Celltype, TF (Transcription Factor), TG (Targets), weight (interaction strength on a scale from -1 to 1)  
+* **network.tsv** - tab-delimited file containing the cluster specific transcription factors and downstream target genes. Column IDs are Celltype, TF (Transcription Factor), TG (Targets), weight (interaction strength on a scale from -1 to 1) , hgnc symble, ensembl gene id, entrez gene id, gene descripton, chromosome, start, stop and strand.
 
 <img width="1111" alt="results" src="https://user-images.githubusercontent.com/59709364/72639224-19f7b180-3933-11ea-866d-b902f5158102.png">
 
@@ -124,7 +124,9 @@ This will automatically launch open the app in the default web browser.
 
 ### Future Directions
 
-In the future we hope to integrate a pseudotime analysis as a method to understand how regulatory networks change at different time points during cell type differentiation and or disease progression. Incorporating a trajectory inference may help to better characterize the evolution and divergences between cell clusters. 
+In a near future update, we will be adding increased information to the network visualization, including hover over information for the genes and motif/tissue specificity information for the transcription factors.
+
+Longer term goals include to integrate a pseudotime analysis as a method to understand how regulatory networks change at different time points during cell type differentiation and or disease progression. Incorporating a trajectory inference may help to better characterize the evolution and divergences between cell clusters. 
 
 
 
@@ -138,6 +140,7 @@ In the future we hope to integrate a pseudotime analysis as a method to understa
 * [Cicero](https://cole-trapnell-lab.github.io/cicero-release/) - Pliner, H. A., Packer, J. S., McFaline-Figueroa, J. L., Cusanovich, D. A., Daza, R. M., Aghamirzaie, D., … Trapnell, C. (2018). Cicero Predicts cis-Regulatory DNA Interactions from Single-Cell Chromatin Accessibility Data. Molecular cell, 71(5), 858–871.e8. doi:10.1016/j.molcel.2018.06.044
 * [ChromVar](https://github.com/GreenleafLab/chromVAR) - Schep, A., Wu, B., Buenrostro, J. et al. chromVAR: inferring transcription-factor-associated accessibility from single-cell epigenomic data. Nat Methods 14, 975–978 (2017) doi:10.1038/nmeth.4401
 * [ACTIONet](https://github.com/shmohammadi86/ACTIONet) - Mohammadi, S., Davila-Velderrain, J., Kellis, M. (2019) A multiresolution framework to characterize single-cell state landscapes. bioRxiv 746339; doi: doi.org/10.1101/746339
+* [Biomart] (https://bioconductor.org/packages/release/bioc/html/biomaRt.html) - Durinck S, Spellman P, Birney E, Huber W (2009). “Mapping identifiers for the integration of genomic datasets with the R/Bioconductor package biomaRt.” Nature Protocols, 4, 1184–1191.
 
 
 #### Team Members
