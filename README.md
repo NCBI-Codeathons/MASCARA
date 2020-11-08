@@ -11,10 +11,10 @@
 * [Claire Marchal](https://www.linkedin.com/in/marchalc/)
 * [Shahin Mohammadi](https://www.linkedin.com/in/shmohammadi/)
 * [Marygrace Trousdell](https://www.linkedin.com/in/marygrace-trousdell/)
-* [Miranda Darby] (https://github.com/MMDarby)
-* [Bala Desinghu] (https://github.com/dmbala)
+* [Miranda Darby](https://github.com/MMDarby)
+* [Bala Desinghu](https://github.com/dmbala)
 * [Samantha Henry]
-* [Jenelys Ruiz Ortiz] (https://www.linkedin.com/in/jenelys-ruiz-16224316a/)
+* [Jenelys Ruiz Ortiz](https://www.linkedin.com/in/jenelys-ruiz-16224316a/)
 
 
 
@@ -140,7 +140,7 @@ Longer term goals include to integrate a pseudotime analysis as a method to unde
 * [Cicero](https://cole-trapnell-lab.github.io/cicero-release/) - Pliner, H. A., Packer, J. S., McFaline-Figueroa, J. L., Cusanovich, D. A., Daza, R. M., Aghamirzaie, D., … Trapnell, C. (2018). Cicero Predicts cis-Regulatory DNA Interactions from Single-Cell Chromatin Accessibility Data. Molecular cell, 71(5), 858–871.e8. doi:10.1016/j.molcel.2018.06.044
 * [ChromVar](https://github.com/GreenleafLab/chromVAR) - Schep, A., Wu, B., Buenrostro, J. et al. chromVAR: inferring transcription-factor-associated accessibility from single-cell epigenomic data. Nat Methods 14, 975–978 (2017) doi:10.1038/nmeth.4401
 * [ACTIONet](https://github.com/shmohammadi86/ACTIONet) - Mohammadi, S., Davila-Velderrain, J., Kellis, M. (2019) A multiresolution framework to characterize single-cell state landscapes. bioRxiv 746339; doi: doi.org/10.1101/746339
-* [Biomart] (https://bioconductor.org/packages/release/bioc/html/biomaRt.html) - Durinck S, Spellman P, Birney E, Huber W (2009). “Mapping identifiers for the integration of genomic datasets with the R/Bioconductor package biomaRt.” Nature Protocols, 4, 1184–1191.
+* [Biomart](https://bioconductor.org/packages/release/bioc/html/biomaRt.html) - Durinck S, Spellman P, Birney E, Huber W (2009). “Mapping identifiers for the integration of genomic datasets with the R/Bioconductor package biomaRt.” Nature Protocols, 4, 1184–1191.
 
 
 #### Team Members
