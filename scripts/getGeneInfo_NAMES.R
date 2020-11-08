@@ -89,12 +89,10 @@ rownames(mascaraGenes) <- as.character(mascaraGenes$hgnc_symbol)
 # Just going old school and cbinding the tables, then checking afterward
 fullGeneDF <-cbind(mascaraOut,mascaraGenes)
 write.csv(fullGeneDF,file="~/Documents/GitHub/MASCARA/data/geneInfo.csv")
-# Make sure that they match (they don't)
-identical(mascaraOut$TG,mascaraGenes$hgnc_symbol)
-# [1] FALSE
 
-# Figure out which ones don't match
-test <- cbind(mascaraOut$TG,mascaraGenes$hgnc_symbol)
-bad <- test[which(identical(mascaraOut$TG,mascaraGenes$hgnc_symbol)==FALSE),]
-test[bad]
+# Make sure that they match except for NAs
+summary(!(fullGeneDF$TG == fullGeneDF$hgnc_symbol))
+# Mode   FALSE    NA's 
+# logical   39755     769 
 
+#There are no TRUE values, only the number of NAs we expect from gene symbols that weren't present in biomart, so the data is ok.
