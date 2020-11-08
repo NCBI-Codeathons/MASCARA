@@ -10,7 +10,7 @@ rule actionet_rna:
     output:
         ACTIONet_out="data/intermediate/rna.ACTIONet.out.rds"
     singularity:
-        "docker://mfansler/mascara"
+        "docker://dmbala/mascara"
     shell:
         """
         {input.script} {input.rnaSCE}
@@ -26,7 +26,7 @@ rule cicero:
     params:
         genome=config['genome']
     singularity:
-        "docker://mfansler/mascara"
+        "docker://dmbala/mascara"
     shell:
         """
         {input.script} {input.atacSCE} {input.gtf}
@@ -39,7 +39,7 @@ rule chromVAR:
     output:
         sce="data/intermediate/sce.chromVAR.rds"
     singularity:
-        "docker://mfansler/mascara"
+        "docker://dmbala/mascara"
     shell:
         """
         {input.script} {input.atacSCE}
@@ -52,7 +52,7 @@ rule actionet_inferred_rna:
     output:
         ACTIONet_out="data/intermediate/ACTIONet_out_inferredRNA.rds"
     singularity:
-        "docker://mfansler/mascara"
+        "docker://dmbala/mascara"
     shell:
         """
         {input.script} {input.rnaSCE}
@@ -67,7 +67,7 @@ rule run_match_cellstates:
     output:
         "data/output/final.rds"
     singularity:
-        "docker://mfansler/mascara"
+        "docker://dmbala/mascara"
     shell:
         """
         Rscript {input.script} {input.sceRNA} {input.sceInferredRNA} {input.sceChromVAR}
