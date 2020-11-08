@@ -11,6 +11,8 @@
 * [Claire Marchal](https://www.linkedin.com/in/marchalc/)
 * [Shahin Mohammadi](https://www.linkedin.com/in/shmohammadi/)
 * [Marygrace Trousdell](https://www.linkedin.com/in/marygrace-trousdell/)
+* [Bala Desinghu](https://github.com/dmbala)
+
 
 ### Goals and Aims
 The advent of single cell sequencing technologies have now allowed for the identification and characterization of rare cell types. Identifying the key transcription factors and downstream target genes is important for understanding the biology of these rare populations. The goal of this project is to develop a workflow that identifies and ranks transcriptional regulators important in the various cell states as identified by single cell sequencing. By combining both scRNA-seq and scATAC-seq we can increase our power to identify biologically meaningful gene regulatory networks.
